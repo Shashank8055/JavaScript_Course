@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>
+        jQuery Selection
+    </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h2>Selectors up jQuery</h2>
+    <p>This is first paragraph outside division</p>
+    <p>This is second paragraph outside division</p>
+
+    <div id="firstdiv" class="mydiv">
+        <p>This is first paragraph in first division</p>
+        <p>This is second paragraph in second division</p>
+    </div>
+
+    <div id="seconddiv" class="mydiv">
+        <p>This is third paragraph in second division</p>
+    </div>
+
+    <div id="thirddiv" class="mydiv">
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+        </ul>
+    </div>
+
+    <button onclick="fn1()" id="btn-1">Click Me</button>
+</body>
+
+<script src="jquery.js" type="text/javascript"></script>
+<script>
+    function fn1() {
+        //alert("alert");
+        //$("#firstdiv,#seconddiv").fadeToggle(1500);
+        //$("div > p").fadeToggle(100);
+        //$("p:first").fadeToggle(100); //To hide the first paragraph
+        //$(".mydiv:first").fadeToggle(100); 
+        //$(".mydiv:even").fadeToggle(1000);
+        $("li:even").fadeToggle(1000);
+
+    }
+</script>
+
+</html>
